@@ -56,3 +56,41 @@ go version go1.9.1 linux/amd64
 10. 查看Go语言的环境信息
 [root@localhost go]# go env
 
+编译运行一个简单的程序：
+
+1. [root@localhost ~]# cd /home/go/src/		##进入项目目录
+
+2. 创建项目目录及文件：( project/test/main/main.go )
+[root@localhost src]# mkdir project
+[root@localhost src]# cd project/
+[root@localhost project]# mkdir test
+[root@localhost project]# cd test/
+[root@localhost test]# mkdir main
+[root@localhost test]# cd main/
+[root@localhost main]# touch main.go
+
+3. 进入main.go编写第一个程序
+[root@localhost main]# vi main.go 
+
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello World")
+}
+
+4. 使用go install工具编译此程序
+[root@localhost main]# cd /home/go/
+[root@localhost go]# go install project/test/main
+5. 进入bin目标查看编译好的二进制文件 ( cd /home/go/bin )
+[root@localhost go]# cd bin/
+[root@localhost bin]# ls
+main
+
+6. 使用shell命令 ./ 运行编译好的二进制文件
+[root@localhost bin]# ./main 
+Hello World
+
+
+
