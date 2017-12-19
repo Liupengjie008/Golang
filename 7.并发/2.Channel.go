@@ -191,6 +191,7 @@ func main() {
             } 
 
             <-sem    // 接收数据，使得其他阻塞 goroutine 可以发送数据。
+        
         }(i)
     }
 
@@ -266,21 +267,25 @@ func main() {
 
 
 channel 是第一类对象，可传参 (内部实现为指针) 或者作为结构成员。
- type Request struct {
+
+type Request struct {
     data []int
-ret chan int }
+    ret chan int 
+}
+
 func NewRequest(data ...int) *Request {
     return &Request{ data, make(chan int, 1) }
 }
-74
 
- Go 学习笔记, 第 4 版
 func Process(req *Request) {
     x := 0
     for _, i := range req.data {
         x += i
+    }
+    
+    req.ret <- x 
 }
-req.ret <- x }
+
 func main() {
     req := NewRequest(10, 20, 30)
     Process(req)
