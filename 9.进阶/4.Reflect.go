@@ -223,31 +223,6 @@ func main() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9.4.2
-Value
 Value 和 Type 使用方法类似，包括使用 Elem 获取指针目标对象。
 
 type User struct {
@@ -263,85 +238,111 @@ type Admin struct {
 func main() {
     u := &Admin{User{"Jack", 23}, "NT"}
     v := reflect.ValueOf(u).Elem()
-fmt.Println(v.FieldByName("title").String()) fmt.Println(v.FieldByName("age").Int()) fmt.Println(v.FieldByIndex([]int{0, 1}).Int()) //  多级序号访问嵌 字段成员
+    
+    fmt.Println(v.FieldByName("title").String())    // 用转换方法获取字段值
+    fmt.Println(v.FieldByName("age").Int())         // 直接访问嵌入字段成员
+    fmt.Println(v.FieldByIndex([]int{0, 1}).Int())  // 用多级序号访问嵌入字段成员
 }
-//  转换 法获取字段值 // 直接访问嵌 字段成员
+ 
 输出:
 NT
- 99
+23 
+23
 
- 23 23
- 除具体的 Int、String 等转换 法，还可返回 interface{}。只是 导出字段 法使 ，需   CanInterface 判断 下。
-Go 学习笔记, 第 4 版
- type User struct {
+
+除具体的 Int、String 等转换方法，还可返回 interface{}。只是非导出字段方法使用，需用 CanInterface 判断一下。
+
+type User struct {
     Username string
-age int }
+    age int 
+}
+
 func main() {
     u := User{"Jack", 23}
     v := reflect.ValueOf(u)
+
     fmt.Println(v.FieldByName("Username").Interface())
     fmt.Println(v.FieldByName("age").Interface())
 }
+
 输出:
+Jack
+panic: reflect.Value.Interface: cannot return value obtained from unexported field or method
+
+
+
 当然，转换成具体类型不会引发 panic。
- Jack
-panic: reflect.Value.Interface: cannot return value obtained from unexported field or
-method
- func main() {
+ 
+func main() {
     u := User{"Jack", 23}
     v := reflect.ValueOf(u)
+
     f := v.FieldByName("age")
+
     if f.CanInterface() {
         fmt.Println(f.Interface())
     } else {
         fmt.Println(f.Int())
-} }
-除 struct，其他复合类型 array、slice、map 取值 例。
- func main() {
+    } 
+}
+
+
+除 struct，其他复合类型 array、slice、map 取值示例。
+
+func main() {
     v := reflect.ValueOf([]int{1, 2, 3})
     for i, n := 0, v.Len(); i < n; i++ {
-fmt.Println(v.Index(i).Int())
-100
+        fmt.Println(v.Index(i).Int())
 
- Go 学习笔记, 第 4 版
     }
+
     fmt.Println("---------------------------")
+
     v = reflect.ValueOf(map[string]int{"a": 1, "b": 2})
     for _, k := range v.MapKeys() {
         fmt.Println(k.String(), v.MapIndex(k).Int())
     }
 }
- 输出:
-需要注意，Value 某些 法没有遵循 "comma ok" 模式， 是返回 ZeroValue，因此需 要  IsValid 判断 下是否可 。
- 1
+
+输出:
+1
 2
-3 --------------------------- a1
-b2
- func (v Value) FieldByName(name string) Value {
+3 
+--------------------------- 
+a 1
+b 2
+
+
+
+需要注意，Value 某些方法没有遵循 "comma ok" 模式，而是返回 ZeroValue，因此需要用 IsValid 判断一下是否可用。
+ 
+func (v Value) FieldByName(name string) Value {
     v.mustBe(Struct)
     if f, ok := v.typ.FieldByName(name); ok {
         return v.FieldByIndex(f.Index)
-}
+    }
     return Value{}
 }
- type User struct {
+
+type User struct {
     Username string
-age int }
+    age int 
+}
+
 func main() {
     u := User{}
     v := reflect.ValueOf(u)
+
     f := v.FieldByName("a")
     fmt.Println(f.Kind(), f.IsValid())
 }
+
 输出:
 invalid false
-另外，接 是否为 nil，需要 tab 和 data 都为空。可使  IsNil  法判断 data 值。
-101
- 
- 输出:
-将对象转换为接 ，会发 复制 为。该复制品只读， 法被修改。所以要通过接 改变  标对象状态，必须是 pointer-interface。
-就算是指针，我们依然没法将这个存储在 data 的指针指向其他对象，只能透过它修改  标对象。因为 标对象并没有被复制，被复制的只是指针。
-Go 学习笔记, 第 4 版
+
+
+另外，接口是否为 nil，需要 tab 和 data 都为空。可使用 IsNil 方法判断 data 值。
+
 func main() {
     var p *int
     var x interface{} = p
@@ -349,105 +350,153 @@ func main() {
     v := reflect.ValueOf(p)
     fmt.Println(v.Kind(), v.IsNil())
 }
-  false
+
+输出:
+false
 ptr true
- type User struct {
+
+
+将对象转换为接口，会发生复制行为。该复制品只读，无法被修改。所以要通过接口改变目标对象状态，必须是 pointer-interface。
+
+就算是指针，我们依然没法将这个存储在 data 的指针指向其他对象，只能透过它修改目标对象。因为目标对象并没有被复制，被复制的只是指针。
+
+  
+type User struct {
     Username string
-age int }
+    age int 
+}
+
 func main() {
     u := User{"Jack", 23}
+
     v := reflect.ValueOf(u)
     p := reflect.ValueOf(&u)
+
     fmt.Println(v.CanSet(), v.FieldByName("Username").CanSet())
     fmt.Println(p.CanSet(), p.Elem().FieldByName("Username").CanSet())
 }
-输出:
- 导出字段 法直接修改，可改 指针操作。
- false  false
-false  true
- type User struct {
-    Username string
-age int }
-func main() {
-102
 
- Go 学习笔记, 第 4 版
+输出:
+false  false
+false  true
+
+
+非导出字段无法直接修改，可改用指针操作。
+ 
+type User struct {
+    Username string
+    age int 
+}
+
+func main() {
     u := User{"Jack", 23}
     p := reflect.ValueOf(&u).Elem()
+
     p.FieldByName("Username").SetString("Tom")
+
     f := p.FieldByName("age")
     fmt.Println(f.CanSet())
-// 判断是否能获取地址。 if f.CanAddr() {
-age := (*int)(unsafe.Pointer(f.UnsafeAddr()))
-// age := (*int)(unsafe.Pointer(f.Addr().Pointer())) // 等同 *age = 88
-}
-// 注意 p 是 Value 类型，需要还原成接 才能转型。
+
+    // 判断是否能获取地址。 
+    if f.CanAddr() {
+        age := (*int)(unsafe.Pointer(f.UnsafeAddr()))
+        // age := (*int)(unsafe.Pointer(f.Addr().Pointer())) 
+        // 等同 *age = 88
+    }
+
+    // 注意 p 是 Value 类型，需要还原成接 才能转型。
     fmt.Println(u, p.Interface().(User))
 }
- 输出:
-复合类型修改 例。
- false
+
+输出:
+false
 {Tom 88} {Tom 88}
- func main() {
+
+
+复合类型修改示例。
+ 
+func main() {
     s := make([]int, 0, 10)
     v := reflect.ValueOf(&s).Elem()
+
     v.SetLen(2)
     v.Index(0).SetInt(100)
     v.Index(1).SetInt(200)
+
     fmt.Println(v.Interface(), s)
+
     v2 := reflect.Append(v, reflect.ValueOf(300))
     v2 = reflect.AppendSlice(v2, reflect.ValueOf([]int{400, 500}))
+
     fmt.Println(v2.Interface())
+
     fmt.Println("----------------------")
+
     m := map[string]int{"a": 1}
     v = reflect.ValueOf(&m).Elem()
+
     v.SetMapIndex(reflect.ValueOf("a"), reflect.ValueOf(100)) // update
     v.SetMapIndex(reflect.ValueOf("b"), reflect.ValueOf(200)) // add
-103
 
-     fmt.Println(v.Interface(), m)
+    fmt.Println(v.Interface(), m)
 }
- 输出:
-9.4.3 Method 可获取 法参数、返回值类型等信息。
-Go 学习笔记, 第 4 版
- [100 200] [100 200]
+
+
+输出:
+[100 200] [100 200]
 [100 200 300 400 500]
 ----------------------
 map[a:100 b:200] map[a:100 b:200]
- type Data struct {
+
+
+
+Method 可获取方法参数、返回值类型等信息。
+ 
+type Data struct {
 }
+
 func (*Data) Test(x, y int) (int, int) {
     return x + 100, y + 100
 }
+
 func (*Data) Sum(s string, x ...int) string {
     c := 0
     for _, n := range x {
         c += n
-}
+    }
+
     return fmt.Sprintf(s, c)
 }
+
 func info(m reflect.Method) {
     t := m.Type
+
     fmt.Println(m.Name)
+
     for i, n := 0, t.NumIn(); i < n; i++ {
         fmt.Printf("  in[%d] %v\n", i, t.In(i))
-}
+    }
+
     for i, n := 0, t.NumOut(); i < n; i++ {
         fmt.Printf("  out[%d] %v\n", i, t.Out(i))
-} }
+    }
+}
+
 func main() {
     d := new(Data)
-t := reflect.TypeOf(d)
-104
+    t := reflect.TypeOf(d)
 
- Go 学习笔记, 第 4 版
-     test, _ := t.MethodByName("Test")
+    test, _ := t.MethodByName("Test")
     info(test)
+    
     sum, _ := t.MethodByName("Sum")
-info(sum) }
+    info(sum) 
+}
+
+
 输出:
- Test
-  in[0] *main.Data
+Test
+  in[0] *main.Data  // receiver
   in[1] int
   in[2] int
   out[0] int
@@ -457,96 +506,130 @@ Sum
   in[1] string
   in[2] []int
   out[0] string
-// receiver
-动态调  法很简单，按 In 列表准备好所需参数即可 (不包括 receiver)。
- func main() {
+
+
+动态调用方法很简单，按 In 列表准备好所需参数即可 (不包括 receiver)。
+
+func main() {
     d := new(Data)
     v := reflect.ValueOf(d)
+
     exec := func(name string, in []reflect.Value) {
         m := v.MethodByName(name)
         out := m.Call(in)
         for _, v := range out {
             fmt.Println(v.Interface())
-} }
+        } 
+    }
+
     exec("Test", []reflect.Value{
         reflect.ValueOf(1),
         reflect.ValueOf(2),
-})
+    })
+
     fmt.Println("-----------------------")
+
     exec("Sum", []reflect.Value{
         reflect.ValueOf("result = %d"),
         reflect.ValueOf(1),
         reflect.ValueOf(2),
-})
-105
+    })
+}
 
- }
+
 输出:
-如改  CallSlice，只需将变参打包成 slice 即可。
-Go 学习笔记, 第 4 版
-  101
+101
 102
 -----------------------
 result = 3
- func main() {
+
+
+如改用 CallSlice，只需将变参打包成 slice 即可。
+  
+func main() {
     d := new(Data)
     v := reflect.ValueOf(d)
+
     m := v.MethodByName("Sum")
+
     in := []reflect.Value{
         reflect.ValueOf("result = %d"),
-        reflect.ValueOf([]int{1, 2}),
-}
+        reflect.ValueOf([]int{1, 2}),   // 将变参打包成 slice。
+    }
+
     out := m.CallSlice(in)
+
     for _, v := range out {
         fmt.Println(v.Interface())
-} }
-// 将变参打包成 slice。
- 导出 法 法调 ，甚  法透过指针操作，因为接 类型信息中没有该 法地址。
-9.4.4 Make
-利  Make、New 等函数，可实现近似泛型操作。
- var (
+    } 
+}
+
+非导出方法无法调用，甚至无法透过指针操作，因为接口类型信息中没有该方法地址。
+
+
+利用 Make、New 等函数，可实现近似泛型操作。
+
+var (
     Int    = reflect.TypeOf(0)
     String = reflect.TypeOf("")
 )
-func Make(T reflect.Type, fptr interface{}) {
-// 实际创建 slice 的包装函数。
-swap := func(in []reflect.Value) []reflect.Value {
-// --- 省略算法内容 --- //
-106
 
- 输出:
-原理并不复杂。
-1. 核 是提供 个 swap 函数，其中利  reflect.MakeSlice  成最终 slice 对象， 因此需要传  element type、len、cap 参数。
-2. 接下来，利  MakeFunc 函数 成 swap value，并修改函数变量指向，以达到调   swap 的 的。
-Go 学习笔记, 第 4 版
- // 返回和类型匹配的 slice 对象。 return []reflect.Value{
+func Make(T reflect.Type, fptr interface{}) {
+    
+    // 实际创建 slice 的包装函数。
+    swap := func(in []reflect.Value) []reflect.Value {
+
+        // --- 省略算法内容 --- //
+
+    // 返回和类型匹配的 slice 对象。 
+    return []reflect.Value{
         reflect.MakeSlice(
-            reflect.SliceOf(T),
-            int(in[0].Int()),
-            int(in[1].Int())
-), }
+            reflect.SliceOf(T), // slice type
+            int(in[0].Int()), // len
+            int(in[1].Int()) // cap
+        ), 
+    }
 }
-// slice type
-// len
-// cap
-// 传 的是函数变量指针，因为我们要将变量指向 swap 函数。 fn := reflect.ValueOf(fptr).Elem()
-// 获取函数指针类型， 成所需 swap function value。 v := reflect.MakeFunc(fn.Type(), swap)
-// 修改函数指针实际指向，也就是 swap。
-fn.Set(v) }
+
+    // 传入的是函数变量指针，因为我们要将变量指向 swap 函数。 
+    fn := reflect.ValueOf(fptr).Elem()
+
+    // 获取函数指针类型，生成所需 swap function value。 
+    v := reflect.MakeFunc(fn.Type(), swap)
+
+    // 修改函数指针实际指向，也就是 swap。
+    fn.Set(v) 
+}
+
 func main() {
     var makeints func(int, int) []int
     var makestrings func(int, int) []string
-//  相同算法， 成不同类型创建函数。 Make(Int, &makeints) Make(String, &makestrings)
-// 按实际类型使 。
-x := makeints(5, 10) fmt.Printf("%#v\n", x)
+
+    // 用相同算法，生成不同类型创建函数。 
+    Make(Int, &makeints) 
+    Make(String, &makestrings)
+
+    // 按实际类型使用。
+    x := makeints(5, 10) 
+    fmt.Printf("%#v\n", x)
+
     s := makestrings(3, 10)
     fmt.Printf("%#v\n", s)
 }
- []int{0, 0, 0, 0, 0}
-[]string{"", "", ""}
-107
 
- 3. 当调 具体类型的函数变量时，实际内部调 的是 swap，相关代码会 动转换参 数列表，并将返回结果还原成具体类型返回值。
-如此，在共享算法的前提下， 须  interface{}， 须做类型转换，颇有泛型的效果。
+输出:
+[]int{0, 0, 0, 0, 0}
+[]string{"", "", ""}
+
+
+原理并不复杂。
+1. 核心是提供一个 swap 函数，其中利用 reflect.MakeSlice 生成最终 slice 对象， 因此需要传入 element type、len、cap 参数。
+
+2. 接下来，利用 MakeFunc 函数生成 swap value，并修改函数变量指向，以达到调用 swap 的目的。
+
+3. 当调用具体类型的函数变量时，实际内部调用的是 swap，相关代码会自动转换参 数列表，并将返回结果还原成具体类型返回值。
+
+如此，在共享算法的前提下，无须用 interface{}，无须做类型转换，颇有泛型的效果。
+
 
 
