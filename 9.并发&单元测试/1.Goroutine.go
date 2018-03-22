@@ -1,4 +1,3 @@
-
 Golang 在语言层面对并发编程提供支持，一种类似协程，称作 goroutine 的机制。
 
 只需在函数调用语句前添加 go 关键字，就可创建并发执行单元。开发人员无需了解任何执行细节，调度器会自动将其安排到合适的系统线程上执行。goroutine 是一种非常轻量级的实现，可在单个进程里执行成千上万的并发任务。
@@ -14,6 +13,13 @@ go func() {
 
 默认情况下，进程启动后仅允许一个系统线程服务于 goroutine。可使用环境变量或标准库函数 runtime.GOMAXPROCS 修改，让调度器用多个线程实现多核并行，而不仅仅是并发。
  
+package main
+
+import (
+    "math"
+    "sync"
+)
+
 func sum(id int) {
     var x int64
     for i := 0; i < math.MaxUint32; i++ {
@@ -64,6 +70,13 @@ sys 0.02
 
 调用 runtime.Goexit 将立即终止当前 goroutine 执行，调度器确保所有已注册 defer 延迟调用被执行。
 
+package main
+
+import (
+    "runtime"
+    "sync"
+)
+
 func main() {
     wg := new(sync.WaitGroup)
     wg.Add(1)
@@ -90,6 +103,13 @@ A.defer
 
 
 和协程 yield 作用类似，Gosched 让出底层线程，将当前 goroutine 暂停，放回队列等待下次被调度执行。
+
+package main
+
+import (
+    "runtime"
+    "sync"
+)
 
 func main() {
     wg := new(sync.WaitGroup)
