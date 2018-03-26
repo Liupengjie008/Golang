@@ -45,6 +45,7 @@ type Writer interface {
 func (p *Result) Write(b []byte) (n int, err error) {
     fmt.Println("called by template")
     p.output += string(b)
+    p.output += "*"
     return len(b), nil
 }
 
@@ -61,7 +62,7 @@ func userInfo(w http.ResponseWriter,r *http.Request) {
     p := Person{Name:"Murphy",age:"28"}
 
     resultWriter := &Result{}
-    io.WriteString(resultWriter, "hello world")
+    io.WriteString(resultWriter, "hello world\r\n")
 
     myTemplate.Execute(resultWriter,p)
     fmt.Println("render data:",resultWriter.output)
@@ -103,7 +104,8 @@ called by template
 called by template
 called by template
 called by template
-render data: hello world<html>
+render data: hello world
+*<html>
 
 <head>
     <title>
@@ -113,8 +115,8 @@ render data: hello world<html>
 <body>
     <p>
         
-        hello,Murphy
-        {Murphy 28}
+        hello,*Murphy*
+        *{Murphy 28}*
     </p>
 </body>
-</html>
+</html>*
