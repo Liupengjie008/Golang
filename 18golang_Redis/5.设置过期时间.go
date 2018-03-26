@@ -1,0 +1,33 @@
+package main
+
+import (
+    "fmt"
+    "github.com/garyburd/redigo/redis"
+)
+
+func main() {
+    c, err := redis.Dial("tcp", "localhost:6379")
+    if err != nil {
+        fmt.Println("conn redis failed,", err)
+        return
+    }
+
+    defer c.Close()
+    _, err = c.Do("expire", "abc", 10)
+    if err != nil {
+        fmt.Println(err)
+        return
+    }
+}
+
+
+命令行运行：
+$ go run main.go 
+
+Redis命令行：
+127.0.0.1:6379> get abc
+"100"
+
+# 10秒后过期
+127.0.0.1:6379> get abc
+(nil)	
