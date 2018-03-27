@@ -55,30 +55,46 @@ Kafka中包含以下基础概念
 8. V byte payload
 
 
+        
+    c.  安装kafka
+        2）打开config目录下的server.properties， 修改log.dirs为D:\kafka_logs,修改advertised.host.name=服务器ip
+        3）启动kafka ./bin/windows/kafka-server-start.bat ./config/server.preperties   
+                // 报错：（Error: missing `server' JVM at `C:\Program Files (x86)\Java\jre1.8.0_144\binver\jvm.dll'.
+                //     Please install or use the JRE or JDK that contains these missing components.）
+               解决方法：将C:\Program Files (x86)\Java\jre1.8.0_144\bin\servertool.exe 改名为：server.exe
+            Mac启动：sh bin/kafka-server-start.sh config/server.properties
+
+
+
 kafka搭建
 	kafka环境基于zookeeper,zookeeper环境基于JAVA-JDK。
 	安装JAVA-JDK，从oracle下载最新的SDK安装。
 	安装zookeeper3.3.6，下载地址：http://apache.fayea.com/zookeeper/ 
 	重命名conf/zoo_sample.cfg 为conf/zoo.cfg 
 	编辑 conf/zoo.cfg，修改dataDir=/Users/liupengjie/Desktop/tool/zookeeper-3.4.10/data
+		（Windows：修改dataDir=D:\zookeeper-3.3.6\data\）
 	启动zookeeper：$ ./bin/zkServer.sh start 
 	ZooKeeper JMX enabled by default
 	Using config: /Users/liupengjie/Desktop/tool/zookeeper-3.4.10/bin/../conf/zoo.cfg
 	Starting zookeeper ... STARTED
+	停止ZK服务: ./bin/zkServer.sh stop
+	重启ZK服务: ./bin/zkServer.sh restart      
+	查看ZK服务状态: ./bin/zkServer.sh status
 	（Windows 启动：bin/zkServer.cmd）
 
-	下载kafka2.1.2 打开链接：http://kafka.apache.org/downloads.html
+	安装kafka
+	下载kafka2.1.2 打开链接：http://kafka.apache.org/downloads.html 	（下载二进制包）
 
 	kafka配置
-
 	通常情况下需要在解压缩kafka后，修改config/server.properties 配置文件中的以下项
 
 	log.dirs = kafka-logs  
+	advertised.host.name=192.168.1.125 		(本机ip)
+
 	# root directory for all kafka znodes.
 	zookeeper.connect = localhost:9092
 	# Timeout in ms for connecting to zookeeper
 	zookeeper.connection.timeout.ms=6000
-	advertised.host.name=192.168.1.125 (本机ip)
 	listeners = PLAINTEXT://ip:9092	(listeners = PLAINTEXT://your.host.name:9092)
 
 	/*
@@ -103,7 +119,14 @@ kafka链接zookeeper
 	$ cd bin
 	$ kafka-console-consumer.sh --topic nginx_log --zookeeper 127.0.0.1 2181
 	(Windows 执行：kafka-console-consumer.bat --topic nginx_log --zookeeper 127.0.0.1 2181)
+	/*
+		Windows启动报错：
+		Error: missing `server' JVM at `C:\Program Files (x86)\Java\jre1.8.0_144\binver\jvm.dll'.
+		Please install or use the JRE or JDK that contains these missing components.
 
+		解决方法：将C:\Program Files (x86)\Java\jre1.8.0_144\bin\servertool.exe 改名为：server.exe
+	*/
+				
 
 查看topic的详细信息
 	bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic nginx_log --describe
