@@ -34,19 +34,21 @@ func main() {
             return
         }
         defer pc.AsyncClose()
+        wg.Add(1)
         go func(pc sarama.PartitionConsumer) {
-            wg.Add(1)
+            defer wg.Done()
             for msg := range pc.Messages() {
                 fmt.Printf("Partition:%d, Offset:%d, Key:%s, Value:%s", msg.Partition, msg.Offset, string(msg.Key), string(msg.Value))
                 fmt.Println()
             }
-            wg.Done()
+            
         }(pc)
     }
     //time.Sleep(time.Hour)
     wg.Wait()
     consumer.Close()
 }
+
 
 
 
@@ -101,19 +103,27 @@ consumer.go 	producer.go
 启动kafka
 启动kafka链接zookeeper
 
+
+开启消费者：  
+$ go run consumer.go 
+
 开启生产者：
 $ go run producer.go 
-pid:0 offset:1678
-pid:0 offset:1679
-pid:0 offset:1680
-pid:0 offset:1681
-pid:0 offset:1682
-pid:0 offset:1683
-pid:0 offset:1684
-pid:0 offset:1685
-pid:0 offset:1686
+pid:0 offset:1930
+pid:0 offset:1931
+pid:0 offset:1932
+pid:0 offset:1933
+pid:0 offset:1934
+pid:0 offset:1935
+pid:0 offset:1936
+pid:0 offset:1937
+pid:0 offset:1938
 
 
-开启消费者：    //消费代码有问题待解决
-$ go run consumer.go 
-[0]
+消费者显示：
+Partition:0, Offset:1930, Key:, Value:this is a good test, my message is good
+Partition:0, Offset:1931, Key:, Value:this is a good test, my message is good
+Partition:0, Offset:1932, Key:, Value:this is a good test, my message is good
+Partition:0, Offset:1933, Key:, Value:this is a good test, my message is good
+Partition:0, Offset:1934, Key:, Value:this is a good test, my message is good
+Partition:0, Offset:1935, Key:, Value:this is a good test, my message is good

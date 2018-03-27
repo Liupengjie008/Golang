@@ -103,3 +103,9 @@ kafka链接zookeeper
 	$ cd bin
 	$ kafka-console-consumer.sh --topic nginx_log --zookeeper 127.0.0.1 2181
 	(Windows 执行：kafka-console-consumer.bat --topic nginx_log --zookeeper 127.0.0.1 2181)
+
+
+查看topic的详细信息
+	bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic nginx_log --describe
+kafka消费者客户端命令
+	bin/kafka-console-consumer.sh  --zookeeper 127.0.0.1:2181  --topic nginx_log --from-beginning
