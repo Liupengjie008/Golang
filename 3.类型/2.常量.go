@@ -1,4 +1,29 @@
-常量值必须是编译期可确定的数字、字符串、布尔值。
+常量的定义与变量类似，只不过使用 const 关键字，代表永远是只读的，不能修改。
+
+const World = "世界"
+
+常量值必须是编译期可确定的字符、字符串、布尔或数字类型的值。
+
+常量不能使用 := 语法定义。
+
+数值常量
+数值常量是高精度的 值 。
+
+一个未指定类型的常量由上下文来决定其类型。
+
+也尝试一下输出 needInt(Big) 吧。
+
+（int 可以存放最大64位的整数，根据平台不同有时会更少。）
+
+const (
+    Big   = 1 << 100
+    Small = Big >> 99
+)
+
+func needInt(x int) int { return x*10 + 1 }
+func needFloat(x float64) float64 {
+    return x * 0.1
+}
 
 const x, y int = 1, 2   // 多常量初始化
 const s = "Hello, World!"   // 类型推断
@@ -38,6 +63,9 @@ const (
 
 
 枚举
+iota 可以被用作枚举值：
+iota，特殊常量，可以认为是一个可以被编译器修改的常量。
+在每一个const关键字出现时，被重置为0，然后再下一个const出现之前，每出现一次iota，其所代表的数字会自动增加1。
 关键字 iota 定义常量组中从 0 开始按行计数的自增枚举值。
 
 const (
@@ -78,6 +106,7 @@ const (
 
 可通过自定义类型来实现枚举类型限制。
 
+package main
 type Color int
 
 const (

@@ -50,18 +50,23 @@ func main() {
 
 注意重新赋值与定义新同名变量的区别。
 
-s := "abc"
-println(&s)
-s, y := "hello", 20		// 重新赋值: 与前 s 在同 层次的代码块中，且有新的变量被定义。 
-println(&s, y)	// 通常函数多返回值 err 会被重复使用。
+package main
 
-{
-    s, z := 1000, 30	// 定义新同名变量: 不在同 层次代码块。
-    println(&s, z)
+func main(){
+	s := "abc"
+	println(&s)
+	s, y := "hello", 20		// 重新赋值: 与前 s 在同 层次的代码块中，且有新的变量被定义。 
+	println(&s, y)	// 通常函数多返回值 err 会被重复使用。
+
+	{
+		s, z := 1000, 30	// 定义新同名变量: 不在同 层次代码块。
+		println(&s, z)
+	}
 }
 
 
 输出:
-0xc04202bf68
-0xc04202bf68 20
-0xc04202bf60 30
+$ go run main.go 
+0xc42003df60
+0xc42003df60 20
+0xc42003df58 30
