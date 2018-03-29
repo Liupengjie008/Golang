@@ -1,5 +1,69 @@
 Golang 引用类型 channel 是 CSP 模式的具体实现，用于多个 goroutine 通讯。其内部实现了同步，确保并发安全。
 
+channel概念
+    a. 类似unix中管道（pipe）
+    b. 先进先出
+    c. 线程安全，多个goroutine同时访问，不需要加锁
+    d. channel是有类型的，一个整数的channel只能存放整数
+
+channel声明
+    var 变量名 chan 类型
+    var test chan int
+    var test chan string
+    var test chan map[string]string
+    var test chan stu
+    var test chan *stu
+
+channel初始化
+    使用make进行初始化，比如：
+    var test chan int
+    test = make(chan int, 10)
+
+    var test chan string
+    test = make(chan string, 10)
+
+channel基本操作
+    1. 从channel读取数据:
+    var testChan chan int
+    testChan = make(chan int, 10)
+    var a int
+    a = <- testChan
+
+    2. 从channel写入数据:
+    var testChan chan int
+    testChan = make(chan int, 10)
+    var a int  = 10
+    testChan <- a
+
+for range遍历chan
+    for input  := range ch {
+        fmt.Println(input)
+    }
+
+chan的关闭
+    1. 使用内置函数close进行关闭，chan关闭之后，for range遍历chan中已经存在的元素后结束
+    2. 使用内置函数close进行关闭，chan关闭之后，没有使用for range的写法需要使用，v, ok := <- ch进行判断chan是否关闭
+
+chan的只读和只写
+    a. 只读chan的声明
+    var 变量的名字 <-chan int
+
+    var readChan <- chan int
+
+    b. 只写chan的声明
+    var 变量的名字 chan<- int
+
+    var writeChan chan<- int
+
+对chan进行select操作
+select {
+     case u := <- ch1:
+     case e := <- ch2:
+     default:   
+    }
+
+
+
 默认为同步模式，需要发送和接收配对。否则会被阻塞，直到另一方准备好后被唤醒。
 
 func main() {
@@ -291,12 +355,6 @@ func main() {
     Process(req)
     fmt.Println(<-req.ret)
 }
-
-
-
-
-
-
 
 
 

@@ -1,45 +1,75 @@
-Golang Map：引用类型，哈希表。键必须是支持相等运算符 (==、!=) 类型， 如 number、string、 pointer、array、struct，以及对应的 interface。值可以是任意类型，没有限制。
+Golang Map：引用类型，哈希表。键必须是支持相等运算符 ("=="、"!=") 类型， 如 number、string、 pointer、array、struct，以及对应的 interface。值可以是任意类型，没有限制。
 
-m := map[int]struct {
-    name string
-    age int 
-}{
-    1:  {"user1", 10},  // 可省略元素类型。
-    2:  {"user2", 20},
-}
-
-println(m[1].name)
+map常见操作:
+    // 创建map
+    var m map[string]string = map[string]string{“hello”: “world”}
+    // map初始化
+    m = make(map[string]string, 10)
+    
 
 
-预先给 make 函数一个合理元素数量参数，有助于提升性能。因为事先申请一大块内存，可避免后续操作时频繁扩张。
+    m := map[int]struct {
+        name string
+        age int 
+    }{
+        1:  {"user1", 10},  // 可省略元素类型。
+        2:  {"user2", 20},
+    }
+    
+    println(m[1].name)
+            
+    预先给 make 函数一个合理元素数量参数，有助于提升性能。因为事先申请一大块内存，可避免后续操作时频繁扩张。
+    
+    m := make(map[string]int, 1000)    
 
-m := make(map[string]int, 1000)
+    m := map[string]int{
+        "a": 1,
+    }
+
+    // 插入和更新：
+    m["hello"] = 2
+    
+    // 查找：
+    val, ok := m["hello"]
+
+    // 判断 key 是否存在。
+    if v, ok := m["a"]; ok {    
+        println(v)
+    }
+    
+    println(m["c"])     // 对于不存在的 key，直接返回 \0，不会出错。
+    
+    m["a"] = 2       // 新增或修改。
+    
+    // 删除：
+    delete(m, "c")      // 删除。如果 key 不存在，不会出错。
+    
+    // 长度：
+    len(m)
+    println(len(m))    // 获取键值对数量。cap 无效。
+    
+    // 遍历：
+    for k, v := range m {       // 迭代，可仅返回 key。随机顺序返回，每次都不相同。
+        println(k, v)
+    }
+    
+    不能保证迭代返回次序，通常是随机结果，具体和版本实现有关。
+
+    
+
+slice与map操作（slice of map）
+    items := make([]map[int][int], 5)
+    for i := 0; i < 5; i++ {
+        items[i] = make(map[int][int])
+    }
+
+map排序：先获取所有key，把key进行排序，再按照排序好的key，进行遍历。
+map反转：初始化另外一个map，把key、value互换即可.
 
 
-常见操作:
-
-m := map[string]int{
-    "a": 1,
-}
-
-if v, ok := m["a"]; ok {    // 判断 key 是否存在。
-    println(v)
-}
-
-println(m["c"])     // 对于不存在的 key，直接返回 \0，不会出错。
-
-m["b"] = 2       // 新增或修改。
-
-delete(m, "c")      // 删除。如果 key 不存在，不会出错。
-
-println(len(m))    // 获取键值对数量。cap 无效。
-
-for k, v := range m {       // 迭代，可仅返回 key。随机顺序返回，每次都不相同。
-    println(k, v)
-}
 
 
-不能保证迭代返回次序，通常是随机结果，具体和版本实现有关。
+
 
 从 map 中取回的是一个 value 临时复制品，对其成员的修改是没有任何意义的。
   
@@ -82,7 +112,8 @@ for i := 0; i < 5; i++ {
     fmt.Println(m)
 }
 
-输出:     //每次输出都会变化
+输出:     
+//每次输出都会变化
 map[36:x 28:x 32:x 2:x 8:x 10:x 12:x]
 map[12:x 6:x 16:x 28:x 4:x 10:x 72:x]
 map[12:x 14:x 16:x 18:x 20:x]

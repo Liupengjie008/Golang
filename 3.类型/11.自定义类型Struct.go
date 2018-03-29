@@ -27,7 +27,7 @@ struct 特点：
 9. 我们可以为struct中的每个字段，写上一个tag。这个tag可以通过反射的机制获取到，最常用的场景就是json序列化和反序列化。
 
 概述
-    与C语言struct一样，与java/php等class类似，在Go中，用于扩展类型，面向对象编程(本部分暂未做详细介绍)等
+    与C语言 struct 一样，与java/php等class类似，在Go中，用于扩展类型，面向对象编程(本部分暂未做详细介绍)等
 
 可用 type 在全局或函数内定义新类型。
 声明格式：(是类型的组合)
@@ -96,7 +96,9 @@ type Person struct {
   age int  
 }  
 p := Person{"James", 23}  //有序  
-p := Person{age:23}       //无序  
+// 顺序初始化必须包含全部字段，否则会出错。
+// p1 := Person{"James"}  // Error: too few values in struct initializer
+p2 := Person{age:23}       //无序  
 
 
 操作
@@ -195,7 +197,11 @@ type Employee struct {
   int             //用内置类型作为匿名字段  
   addr string     //类似于重载  
 }  
-em1 := Employee{Person{"rain", 23, "qingyangqu"}, 5000, 100, "gaoxingqu"}  
+em1 := Employee{Person{"rain", 23, "qingyangqu"}, 5000, 100, "gaoxingqu"} 
+
+// var em2 Person = em1 // Error: cannot use em1 (type Employee) as type Person in assignment （没有继承， 然也不会有多态）
+
+var em2 Person = em1.Person // 同类型拷贝。
 
 操作
   访问方式也是通过 "." 来连接
@@ -256,6 +262,34 @@ func main() {
 live addr(em1.addr) =  gaoxingqu
 work addr(em1.Person.addr) =  qingyangqu
 
+
+空结构 "节省" 内存， 如用来实现 set 数据结构，或者实现没有 "状态" 只有方法的 "静态类"。
+
+var null struct{}
+
+set := make(map[string]struct{})
+set["a"] = null
+
+不能同时嵌入某一类型和其指针类型，因为它们名字相同。
+
+type Resource struct {
+    id int
+}
+
+type User struct {
+    *Resource
+    // Resource     // Error: duplicate field Resource
+    name string 
+}
+
+u := User{
+    &Resource{1},
+    "Administrator",
+}
+
+println(u.id)
+println(u.Resource.id)
+
 strut与tag应用
     在处理json格式字符串的时候，经常会看到声明struct结构的时候，属性的右侧还有小米点括起来的内容。形如：
 
@@ -282,6 +316,13 @@ fmt.Println(string(j))
 可以看到直接用struct的属性名做键值。
 
 其中还有一个bson的声明，这个是用在将数据存储到mongodb使用的。
+
+标签是类型的组成部分。
+
+var u1 struct { name string "username" }
+var u2 struct { name string }
+
+u2 = u1   // Error: cannot use u1 (type struct { name string "username" }) as type struct { name string } in assignment
 
 struct成员变量标签（Tag）获取
 
