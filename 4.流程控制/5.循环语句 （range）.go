@@ -1,5 +1,10 @@
 Golang range类似迭代器操作，返回 (索引, 值) 或 (键, 值)。
 
+for 循环的 range 格式可以对 slice、map、数组、字符串等进行迭代循环。格式如下：
+for key, value := range oldMap {
+    newMap[key] = value
+}
+
 
                    1st value         2nd value
 ----------------+----------------+----------------+-----------------
@@ -73,3 +78,6 @@ for i, v := range s { // 复制 struct slice { pointer, len, cap }。
 
 
 另外两种引用类型 map、channel 是指针包装，而不像 slice 是 struct。
+
+
+
