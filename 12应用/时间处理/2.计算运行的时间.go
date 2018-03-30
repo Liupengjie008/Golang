@@ -10,6 +10,7 @@ time.Millisecond	表示1毫秒
 time.Microsecond	表示1微妙
 time.Nanosecond	表示1纳秒
 
+func Sleep(d Duration) 表示休眠多少时间，休眠时处于阻塞状态，后续程序无法执行．
 // 休眠5秒
 time.Sleep(5 * time.Second)
 
