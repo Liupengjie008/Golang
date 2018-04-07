@@ -78,7 +78,6 @@ sort.Ints对整数进行排序， sort.Strings对字符串进行排序, sort.Flo
 
 
 
-如何设置golang运行的cpu核数
 
 
 
@@ -97,12 +96,13 @@ chan之间的同步
 
 超时控制
 
-goroutine中使用recover
 
-应用场景，如果某个goroutine panic了，而且这个goroutine里面没有
-捕获(recover)，那么整个进程就会挂掉。所以，好的习惯是每当go产
-生一个goroutine，就需要写下recover
 
 
 
 单元测试
+
+
+
+
+
