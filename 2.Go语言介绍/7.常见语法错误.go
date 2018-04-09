@@ -1,46 +1,10 @@
 
-8. map 未初始化 直接使用: Using "nil" Slices and Maps------interfaces, functions, pointers, maps, slices, and channels
-
-错误：
-
-
-
-报错信息：
-
-
-
-正确：
-
-9. map 只有 len操作， 没有 cap 操作: Map Capacity
-
-
-错误：
-
-
-
-报错信息：
-
-
-
-正确：
 
 
 
 
 
 11. array 是值类型, 作为参数其值不会被改变, 形参复制了一份数据给实参; 如果确实需要改变, 需要使用数组指针 或者 slice切片 作为形参: Array Function Arguments
-
-
-错误：
-
-
-
-报错信息：
-
-
-
-正确：
-
 
 11. for range 遍历返回两个参数k, v, 不是一个参数: Unexpected Values in Slice and Array "range" Clauses
 
@@ -84,7 +48,7 @@
 
 31. 使用"nil" Channels是不对的，需要先用make进行初始化，否则会抛出 deadlock 异常: Using "nil" Channels
 
-32. 传值方法的接收者无法修改原有的值: Methods with Value Receivers Can't Change the Original Value
+32. 传值方法的接收者无法修改原有的值: Methods with Value Receivers Can not Change the Original Value
 
 33. 正确关闭HTTP的响应，防止内存泄露或者PANIC：Closing HTTP Response Body
 
