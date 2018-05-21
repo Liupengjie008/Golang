@@ -67,6 +67,12 @@ func ReadAccessRedisNode() {
 				continue
 			}
 
+			// 恶意用户判断
+			err = AntispamByActivityId(req)
+			if err != nil {
+				continue
+			}
+
 			t := time.NewTicker(time.Millisecond * time.Duration(100))
 			select {
 			case ReadChan <- &req:

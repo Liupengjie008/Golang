@@ -34,6 +34,7 @@ func init() {
 	if err := initAll(); err != nil {
 		panic(fmt.Sprintln("init database failed, err:%v", err))
 	}
+
 	go ActivityModel.WatchActivity()
 }
 

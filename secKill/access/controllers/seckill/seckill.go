@@ -59,11 +59,10 @@ func (this *SecKillController) SecKill() {
 	ClientAddr := this.Ctx.Request.Referer()
 	var ClientRefence string
 	if len(ClientAddr) > 0 {
-		ClientRefence = strings.Split(ClientAddr, ":")[0]
+		ClientRefence = strings.TrimLeft(strings.Split(ClientAddr, ":")[1], "//")
 	}
+
 	CloseNotify := this.Ctx.ResponseWriter.CloseNotify()
-	fmt.Println("ClientAddr : ", ClientAddr)
-	fmt.Println("CloseNotify : ", CloseNotify)
 	ActivityId, _ := strconv.Atoi(this.Ctx.Input.Param(":ActivityId"))
 	if ActivityId < 1 {
 		logs.Error("SecKill get ActivityId err ")
