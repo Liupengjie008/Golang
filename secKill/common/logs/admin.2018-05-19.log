@@ -1,0 +1,992 @@
+2018/05/19 16:45:19.023 [D] [init.go:63] init logs success
+2018/05/19 16:45:19.041 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:45:20.712 [D] [init.go:63] init logs success
+2018/05/19 16:45:20.725 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:45:42.563 [D] [init.go:63] init logs success
+2018/05/19 16:45:42.577 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:45:48.741 [D] [init.go:63] init logs success
+2018/05/19 16:45:48.756 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:45:57.367 [D] [init.go:63] init logs success
+2018/05/19 16:45:57.383 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:46:05.874 [D] [init.go:63] init logs success
+2018/05/19 16:46:05.956 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:46:09.040 [D] [init.go:63] init logs success
+2018/05/19 16:46:09.053 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:46:44.809 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:46:44] "GET /index/index HTTP/1.1 200 0" 0.001879 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:46:46.474 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:46:46] "GET /seckill/user/login HTTP/1.1 200 0" 0.001457 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:46:46.499 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:46:46] "GET /captcha/9wFUMtq0BLMF2wP.png HTTP/1.1 200 0" 0.006231 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:46:52.822 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:46:52] "POST /seckill/user/login HTTP/1.1 302 0" 0.001145 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:46:52.826 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:46:52] "GET /seckill/index HTTP/1.1 200 0" 0.001183 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:46:54.075 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:46:54] "GET /seckill/seckill/1 HTTP/1.1 200 0" 0.001090 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:48:42.382 [D] [init.go:63] init logs success
+2018/05/19 16:48:42.414 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:48:47.019 [D] [init.go:63] init logs success
+2018/05/19 16:48:47.032 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:50:27.469 [D] [init.go:63] init logs success
+2018/05/19 16:50:27.493 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:50:30.412 [D] [init.go:63] init logs success
+2018/05/19 16:50:30.427 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:50:32.340 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:50:32] "GET /index/index HTTP/1.1 200 0" 0.002245 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:50:33.293 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:50:33] "GET /seckill/user/login HTTP/1.1 200 0" 0.000828 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:50:33.313 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:50:33] "GET /captcha/5XKAtI2a3WPhWGD.png HTTP/1.1 200 0" 0.004679 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:50:40.040 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:50:40] "POST /seckill/user/login HTTP/1.1 302 0" 0.000707 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:50:40.055 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:50:40] "GET /seckill/index HTTP/1.1 200 0" 0.001023 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:50:41.597 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:50:41] "GET /seckill/seckill/1 HTTP/1.1 200 0" 0.001075 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:53:50.456 [D] [init.go:63] init logs success
+2018/05/19 16:53:50.471 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:53:55.364 [D] [init.go:63] init logs success
+2018/05/19 16:53:55.382 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:53:57.049 [D] [init.go:63] init logs success
+2018/05/19 16:53:57.061 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:54:17.014 [D] [init.go:63] init logs success
+2018/05/19 16:54:17.034 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:54:18.565 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:54:18] "GET /index/index HTTP/1.1 200 0" 0.002565 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:54:18.718 [D] [init.go:63] init logs success
+2018/05/19 16:54:18.731 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:54:19.637 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:54:19] "GET /seckill/user/login HTTP/1.1 200 0" 0.001301 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:54:19.652 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:54:19] "GET /captcha/a5v10M6R0n4ZA87.png HTTP/1.1 200 0" 0.004956 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:54:25.771 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:54:25] "POST /seckill/user/login HTTP/1.1 302 0" 0.000663 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:54:25.773 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:54:25] "GET /seckill/index HTTP/1.1 200 0" 0.000627 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:54:27.705 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:54:27] "GET /seckill/seckill/1 HTTP/1.1 200 0" 0.001635 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:16.002 [D] [init.go:63] init logs success
+2018/05/19 16:56:16.017 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:56:17.992 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:17] "GET /index/index HTTP/1.1 200 0" 0.001193 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:19.019 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:19] "GET /seckill/user/login HTTP/1.1 200 0" 0.000753 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:19.035 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:19] "GET /captcha/sjKA95B0voXj2Ym.png HTTP/1.1 200 0" 0.003915 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:25.237 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:25] "POST /seckill/user/login HTTP/1.1 302 0" 0.000802 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:25.240 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:25] "GET /seckill/index HTTP/1.1 200 0" 0.000698 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] the request url is  /seckill/seckill/1
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] Handler crashed with error sync: unlock of unlocked mutex
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:509
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/panic.go:491
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /usr/local/go/src/sync/mutex.go:184
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/models/antispam.go:156
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/models/antispam.go:42
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/controllers/seckill/seckill.go:68
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:509
+2018/05/19 16:56:26.513 [C] [asm_amd64.s:509] /usr/local/go/src/reflect/value.go:434
+2018/05/19 16:56:26.514 [C] [asm_amd64.s:509] /usr/local/go/src/reflect/value.go:302
+2018/05/19 16:56:26.514 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/github.com/astaxie/beego/router.go:847
+2018/05/19 16:56:26.514 [C] [asm_amd64.s:509] /usr/local/go/src/net/http/server.go:2610
+2018/05/19 16:56:26.516 [C] [asm_amd64.s:509] /usr/local/go/src/net/http/server.go:1797
+2018/05/19 16:56:26.516 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:2337
+2018/05/19 16:56:54.303 [D] [init.go:63] init logs success
+2018/05/19 16:56:54.321 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:56:55.189 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:55] "GET /seckill/seckill/1 HTTP/1.1 302 0" 0.000811  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:55.197 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:55] "GET /seckill/user/login HTTP/1.1 200 0" 0.001882  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:55.236 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:56:55] "GET /captcha/VS9T6q0QYLwtJI3.png HTTP/1.1 200 0" 0.014736 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:56:55.929 [D] [init.go:63] init logs success
+2018/05/19 16:56:55.944 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 16:57:02.582 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:57:02] "POST /seckill/user/login HTTP/1.1 302 0" 0.001712 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:57:02.590 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:57:02] "GET /seckill/user/login HTTP/1.1 200 0" 0.001546 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:57:02.605 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:57:02] "GET /captcha/sQcCJQ8Kq01RsIV.png HTTP/1.1 200 0" 0.003349 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:57:10.232 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:57:10] "POST /seckill/user/login HTTP/1.1 302 0" 0.003715 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:57:10.238 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 04:57:10] "GET /seckill/index HTTP/1.1 200 0" 0.001101 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] the request url is  /seckill/seckill/1
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:509
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/panic.go:491
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/panic.go:63
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/signal_unix.go:367
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/models/antispam.go:163
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/models/antispam.go:42
+2018/05/19 16:57:11.821 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/controllers/seckill/seckill.go:68
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:509
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /usr/local/go/src/reflect/value.go:434
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /usr/local/go/src/reflect/value.go:302
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/github.com/astaxie/beego/router.go:847
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /usr/local/go/src/net/http/server.go:2610
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /usr/local/go/src/net/http/server.go:1797
+2018/05/19 16:57:11.822 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:2337
+2018/05/19 17:01:52.644 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:01:52] "GET /seckill/index HTTP/1.1 200 0" 0.001803 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:02:01.174 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:02:01] "GET /index/index HTTP/1.1 200 0" 0.002213 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:02:02.101 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:02:02] "GET /index/index HTTP/1.1 200 0" 0.000601 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:02:02.825 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:02:02] "GET /index/index HTTP/1.1 200 0" 0.001953 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:02:03.300 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:02:03] "GET /index/index HTTP/1.1 200 0" 0.000517 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:02:04.540 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:02:04] "GET /seckill/index HTTP/1.1 200 0" 0.000730 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:03:07.842 [D] [init.go:63] init logs success
+2018/05/19 17:03:07.854 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:03:10.291 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:03:10] "GET /seckill/seckill/1 HTTP/1.1 302 0" 0.000538  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:03:10.294 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:03:10] "GET /seckill/user/login HTTP/1.1 200 0" 0.000783  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:03:10.308 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:03:10] "GET /captcha/usH0IU9SqezVMsl.png HTTP/1.1 200 0" 0.005325 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:03:18.781 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:03:18] "POST /seckill/user/login HTTP/1.1 302 0" 0.003296 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:03:18.786 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:03:18] "GET /seckill/index HTTP/1.1 200 0" 0.000929 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] the request url is  /seckill/seckill/1
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:509
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/panic.go:491
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/panic.go:63
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/signal_unix.go:367
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/models/antispam.go:163
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/models/antispam.go:42
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/secKill/access/controllers/seckill/seckill.go:68
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:509
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/reflect/value.go:434
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/reflect/value.go:302
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /Users/liupengjie/Desktop/go/src/github.com/astaxie/beego/router.go:847
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/net/http/server.go:2610
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/net/http/server.go:1797
+2018/05/19 17:03:20.084 [C] [asm_amd64.s:509] /usr/local/go/src/runtime/asm_amd64.s:2337
+2018/05/19 17:04:54.626 [D] [init.go:63] init logs success
+2018/05/19 17:04:54.639 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:04:58.263 [D] [init.go:63] init logs success
+2018/05/19 17:04:58.278 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:04:59.841 [D] [init.go:63] init logs success
+2018/05/19 17:04:59.854 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:05:03.789 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:03] "GET /seckill/seckill/1 HTTP/1.1 302 0" 0.000527 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:03.792 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:03] "GET /seckill/user/login HTTP/1.1 200 0" 0.000914 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:03.813 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:03] "GET /captcha/HQpZZKoloVSd9YQ.png HTTP/1.1 200 0" 0.003259 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:10.866 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:10] "POST /seckill/user/login HTTP/1.1 302 0" 0.000864 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:10.873 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:10] "GET /seckill/index HTTP/1.1 200 0" 0.001036 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:22.116 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:12] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.005744 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:23.276 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:13] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.003154 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:05:24.142 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:05:14] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.001930 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:06:59.913 [D] [init.go:63] init logs success
+2018/05/19 17:06:59.929 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:07:03.961 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:07:03] "GET /index/index HTTP/1.1 200 0" 0.001406 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:07:05.748 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:07:05] "GET /seckill/user/login HTTP/1.1 200 0" 0.000750 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:07:05.764 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:07:05] "GET /captcha/jw5D9A1JZnq512u.png HTTP/1.1 200 0" 0.005838 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:07:13.461 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:07:13] "POST /seckill/user/login HTTP/1.1 302 0" 0.001142 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:07:13.465 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:07:13] "GET /seckill/index HTTP/1.1 200 0" 0.000810 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:07:24.535 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:07:14] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.002193 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:09:33.956 [D] [init.go:63] init logs success
+2018/05/19 17:09:33.967 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:10:00.368 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:10:00] "GET /index/index HTTP/1.1 200 0" 0.000640 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:10:01.594 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:10:01] "GET /index/index HTTP/1.1 200 0" 0.000539 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:10:02.751 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:10:02] "GET /seckill/index HTTP/1.1 200 0" 0.000899 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:10:13.887 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:10:03] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.004855 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:10:15.699 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:10:05] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.006569 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:11:05.661 [D] [init.go:63] init logs success
+2018/05/19 17:11:05.677 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:11:12.103 [D] [init.go:63] init logs success
+2018/05/19 17:11:12.122 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:11:15.090 [D] [init.go:63] init logs success
+2018/05/19 17:11:15.104 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:11:16.857 [D] [init.go:63] init logs success
+2018/05/19 17:11:16.871 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 17:11:17.404 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:11:17] "GET /index/index HTTP/1.1 200 0" 0.002041 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:11:18.379 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:11:18] "GET /seckill/user/login HTTP/1.1 200 0" 0.000773 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:11:18.403 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:11:18] "GET /captcha/ITEe1QZtq7cunHu.png HTTP/1.1 200 0" 0.003382 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:11:32.732 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:11:32] "POST /seckill/user/login HTTP/1.1 302 0" 0.000950 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:11:32.743 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:11:32] "GET /seckill/index HTTP/1.1 200 0" 0.001160 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:11:54.009 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 05:11:44] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.002136 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 17:16:47.309 [D] [init.go:63] init logs success
+2018/05/19 17:16:47.322 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:17:18.806 [D] [init.go:63] init logs success
+2018/05/19 17:17:18.829 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:17:20.290 [D] [init.go:63] init logs success
+2018/05/19 17:17:20.300 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:17:52.440 [D] [init.go:63] init logs success
+2018/05/19 17:17:52.457 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:17:57.447 [D] [init.go:63] init logs success
+2018/05/19 17:17:57.465 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:17:59.028 [D] [init.go:63] init logs success
+2018/05/19 17:17:59.039 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:20:12.483 [D] [init.go:63] init logs success
+2018/05/19 17:20:12.495 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:20:52.694 [D] [init.go:63] init logs success
+2018/05/19 17:20:52.712 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:20:54.128 [D] [init.go:63] init logs success
+2018/05/19 17:20:54.139 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:23:29.448 [D] [init.go:58] init logs success
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.450 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.449 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:23:29.452 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:23:29.468 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:23:29.469 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:23:29.470 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:23:29.472 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:23:29.474 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:23:29.478 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 17:25:27.057 [D] [init.go:58] init logs success
+2018/05/19 17:25:27.059 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.059 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.059 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.059 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.059 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.060 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.060 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.060 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.060 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.061 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.061 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.061 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.062 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.062 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.062 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:27.066 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.899 [D] [init.go:58] init logs success
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:30.900 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.691 [D] [init.go:58] init logs success
+2018/05/19 17:25:58.692 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.692 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.692 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.693 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.693 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.692 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.693 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.693 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:25:58.694 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.230 [D] [init.go:58] init logs success
+2018/05/19 17:33:31.231 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.231 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.232 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.233 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.233 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.233 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:31.233 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.708 [D] [init.go:58] init logs success
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.711 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.711 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.711 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.711 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:33:55.710 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.767 [D] [init.go:58] init logs success
+2018/05/19 17:38:30.768 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:38:30.769 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.813 [D] [init.go:58] init logs success
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:40:32.815 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.256 [D] [init.go:58] init logs success
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:41:07.259 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.042 [D] [init.go:58] init logs success
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:44:43.043 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.843 [D] [init.go:58] init logs success
+2018/05/19 17:45:18.844 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.844 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.845 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.845 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.845 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.845 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.844 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.845 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.845 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.846 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.846 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.846 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.846 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.846 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.846 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:45:18.847 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.291 [D] [init.go:58] init logs success
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.292 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:10.301 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:46:27.834 [D] [init.go:58] init logs success
+2018/05/19 17:46:27.836 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.837 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.837 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.838 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:27.850 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 17:46:29.499 [D] [init.go:58] init logs success
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.500 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 17:46:29.508 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 18:05:18.704 [D] [init.go:63] init logs success
+2018/05/19 18:05:18.725 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 18:05:21.476 [D] [init.go:63] init logs success
+2018/05/19 18:05:21.495 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 18:05:22.744 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 06:05:22] "GET /index/index HTTP/1.1 200 0" 0.001501 http://127.0.0.1:8080/seckill/seckill/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 18:05:23.089 [D] [init.go:63] init logs success
+2018/05/19 18:05:23.103 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 18:05:23.788 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 06:05:23] "GET /seckill/user/login HTTP/1.1 200 0" 0.001675 http://127.0.0.1:8080/index/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 18:05:23.815 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 06:05:23] "GET /captcha/EF9FmwpvTA4uX3D.png HTTP/1.1 200 0" 0.004614 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 18:05:30.976 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 06:05:30] "POST /seckill/user/login HTTP/1.1 302 0" 0.001316 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 18:05:30.982 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 06:05:30] "GET /seckill/index HTTP/1.1 200 0" 0.000880 http://127.0.0.1:8080/seckill/user/login Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 18:05:32.232 [D] [asm_amd64.s:2337] pop from queue, data:{"UserId":1,"ActivityId":1}
+2018/05/19 18:05:42.236 [D] [server.go:2610] 127.0.0.1 - - [19/May/2018 06:05:32] "GET /seckill/seckill/1 HTTP/1.1 200 0" 10.004743 http://127.0.0.1:8080/seckill/index Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+
+2018/05/19 21:37:00.513 [D] [init.go:63] init logs success
+2018/05/19 21:37:00.527 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:37:15.342 [D] [init.go:63] init logs success
+2018/05/19 21:37:15.358 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:37:26.500 [D] [init.go:63] init logs success
+2018/05/19 21:37:26.519 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:37:49.648 [D] [init.go:63] init logs success
+2018/05/19 21:37:49.666 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:39:07.594 [D] [init.go:63] init logs success
+2018/05/19 21:39:07.608 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:40:05.899 [D] [init.go:63] init logs success
+2018/05/19 21:40:05.911 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:40:39.266 [D] [init.go:63] init logs success
+2018/05/19 21:40:39.282 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:40:49.327 [D] [init.go:63] init logs success
+2018/05/19 21:40:49.343 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:41:02.029 [D] [init.go:63] init logs success
+2018/05/19 21:41:02.042 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:41:05.173 [D] [init.go:63] init logs success
+2018/05/19 21:41:05.186 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:42:30.687 [D] [init.go:63] init logs success
+2018/05/19 21:42:30.702 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:45:54.806 [D] [init.go:63] init logs success
+2018/05/19 21:45:54.825 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:45:56.535 [D] [init.go:63] init logs success
+2018/05/19 21:45:56.552 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:46:11.809 [D] [init.go:63] init logs success
+2018/05/19 21:46:11.824 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:46:13.432 [D] [init.go:63] init logs success
+2018/05/19 21:46:13.454 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:46:15.047 [D] [init.go:63] init logs success
+2018/05/19 21:46:15.068 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:47:52.221 [D] [init.go:63] init logs success
+2018/05/19 21:47:52.235 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:48:42.413 [D] [init.go:63] init logs success
+2018/05/19 21:48:42.424 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:53:13.075 [D] [init.go:63] init logs success
+2018/05/19 21:53:13.094 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:54:36.847 [D] [init.go:63] init logs success
+2018/05/19 21:54:36.860 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:55:35.199 [D] [init.go:63] init logs success
+2018/05/19 21:55:35.226 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:55:42.493 [D] [init.go:63] init logs success
+2018/05/19 21:55:42.507 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:56:41.409 [D] [init.go:63] init logs success
+2018/05/19 21:56:41.426 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:58:22.115 [D] [init.go:63] init logs success
+2018/05/19 21:58:22.131 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:58:37.469 [D] [init.go:63] init logs success
+2018/05/19 21:58:37.481 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 21:58:39.036 [D] [init.go:63] init logs success
+2018/05/19 21:58:39.049 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:25:05.142 [D] [init.go:63] init logs success
+2018/05/19 22:25:05.158 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:29:26.951 [D] [init.go:63] init logs success
+2018/05/19 22:29:26.974 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:30:51.660 [D] [init.go:63] init logs success
+2018/05/19 22:30:51.672 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:31:06.703 [D] [init.go:63] init logs success
+2018/05/19 22:31:06.717 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:31:25.596 [D] [init.go:63] init logs success
+2018/05/19 22:31:25.608 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:34:29.807 [D] [init.go:63] init logs success
+2018/05/19 22:34:29.820 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:40:45.805 [D] [init.go:63] init logs success
+2018/05/19 22:40:45.818 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:41:07.432 [D] [init.go:63] init logs success
+2018/05/19 22:41:07.444 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:41:13.117 [D] [init.go:63] init logs success
+2018/05/19 22:41:13.130 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:41:37.322 [D] [init.go:63] init logs success
+2018/05/19 22:41:37.343 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/05/19 22:51:34.608 [D] [init.go:56] init logs success
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.609 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:34.619 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:51:38.181 [D] [init.go:56] init logs success
+2018/05/19 22:51:38.181 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.181 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.182 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:51:38.189 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:52:50.922 [D] [init.go:56] init logs success
+2018/05/19 22:52:50.923 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.924 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.925 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.925 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.925 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.925 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.925 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.925 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:50.942 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:52:53.622 [D] [init.go:56] init logs success
+2018/05/19 22:52:53.622 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.622 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.623 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:52:53.630 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:53:15.520 [D] [init.go:56] init logs success
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.521 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:53:15.531 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:55:07.830 [D] [init.go:56] init logs success
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.831 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:55:07.840 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:56:52.106 [D] [init.go:56] init logs success
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.107 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.108 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:52.115 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 22:56:56.547 [D] [init.go:56] init logs success
+2018/05/19 22:56:56.548 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.548 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.548 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.548 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.548 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.550 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.550 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.549 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 22:56:56.550 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.550 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.550 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.550 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.551 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 22:56:56.563 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 23:01:38.099 [D] [init.go:56] init logs success
+2018/05/19 23:01:38.100 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.101 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.102 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:38.108 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 23:01:57.567 [D] [init.go:56] init logs success
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.568 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.569 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:01:57.575 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 23:03:05.951 [D] [init.go:56] init logs success
+2018/05/19 23:03:05.952 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.952 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.952 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.952 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.952 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.952 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.953 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:05.963 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 23:03:45.207 [D] [init.go:56] init logs success
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.208 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.209 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:03:45.217 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 23:11:48.077 [D] [init.go:56] init logs success
+2018/05/19 23:11:48.077 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.077 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.079 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.077 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.077 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.078 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.079 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.079 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.079 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.079 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.079 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:48.087 [I] [asm_amd64.s:2337] http server Running on http://:8088
+2018/05/19 23:11:52.093 [D] [init.go:56] init logs success
+2018/05/19 23:11:52.094 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] read goroutine running
+2018/05/19 23:11:52.096 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.095 [D] [asm_amd64.s:2337] handle write running
+2018/05/19 23:11:52.105 [I] [asm_amd64.s:2337] http server Running on http://:8088
