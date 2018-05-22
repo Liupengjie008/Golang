@@ -68,7 +68,7 @@ var conf config.Configer
 
 // 初始化config
 func InitConfig() (ConfigAll ConfigAll, err error) {
-	conf, err = config.NewConfig("ini", "/Users/liupengjie/Desktop/go/src/secKill/common/conf/common.conf")
+	conf, err = config.NewConfig("ini", "../common/conf/common.conf")
 	if err != nil {
 		err = errors.New(fmt.Sprintf("new config failed, err:", err))
 		return
