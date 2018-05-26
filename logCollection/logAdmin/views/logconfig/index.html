@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>日志搜集列表</h1>
+    <a type="submit" class="btn btn-default" href='{{urlfor "LogConfigController.AddLogConfig"}}'>添加日志信息</a>
+    <table width="95%" border="1" cellpadding="2" cellspacing="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>服务名称</th>
+                <th>日志路径</th>
+                <th>Topic</th>
+                <th>速率（条/秒）</th>
+                <th>添加时间</th>
+                <th>状态（是否收集）</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .LogConfigList}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Service}}</td>
+                <td>{{.LogPath}}</td>
+                <td>{{.Topic}}</td>
+                <td>{{.SendRate}}</td>
+                <td>{{.AddTime}}</td>
+                <td>{{if eq .Status 1}}是{{else if eq .Status 2}}否{{end}}</td>
+                <td>
+                    <a href="/elk/LogConfig/update?Id={{.Id}}">修改</a>
+                </td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</div>

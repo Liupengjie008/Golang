@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>添加日志搜集</h1>{{.error}}
+    <form method="post" action='{{urlfor "LogConfigController.AddLogConfig"}}' enctype="multipart/form-data" >
+        <div class="form-group">
+            <label>日志路径：</label>
+            <input type="text" class="form-control" name="LogPath">
+        </div>
+        <div class="form-group">
+            <label>Topic：</label>
+            <input type="text" class="form-control" name="Topic">
+        </div>
+        <div class="form-group">
+            <label>服务名称：</label>
+            <input type="text" class="form-control" name="Service">
+        </div>
+        <div class="form-group">
+            <label>发送到 kafka 速率  条/秒：</label>
+            <input type="text" class="form-control" name="SendRate">
+        </div>
+        <div class="form-group">
+            <label>是否收集：</label>
+            <input type="radio" name="Status"  value="1">是
+            <input type="radio" name="Status" checked value="2">否
+        </div>
+        <button type="submit" class="btn btn-default">添加</button>
+    </form>
+    <a href='{{urlfor "LogConfigController.Index"}}'>返回</a>
+</div>
